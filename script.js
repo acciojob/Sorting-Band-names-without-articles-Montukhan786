@@ -17,10 +17,16 @@ let updatedList = touristSpots.map( (element) =>{
 
 console.log(updatedList);
 
-function Sort(updatedList) {
-	return updatedList.sort( (a,b) => a.localCompare(b));
-}
+let np = {};
+updatedList.forEach( (element,index) => {
+	np[element] = touristSpots[index];
+})
 
+updatedList.sort();
+
+let finalans = updatedList.map( (element) => {
+	return np[element];
+})
 console.log(Sort(updatedList));
 
 
