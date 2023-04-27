@@ -15,7 +15,7 @@ let updatedList = touristSpots.map( (element) =>{
 	return updateString;
 });
 
-console.log(updatedList);
+// console.log(updatedList);
 
 let np = {};
 updatedList.forEach( (element,index) => {
@@ -27,7 +27,7 @@ updatedList.sort();
 let finalans = updatedList.map( (element) => {
 	return np[element];
 })
-console.log(Sort(updatedList));
+console.log(finalans);
 
 
 
